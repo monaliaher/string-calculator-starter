@@ -15,6 +15,22 @@ class StringCalculator {
         }
     }
 
-  
-    
+private int getSum(String[] numbers){
+    int sum = 0;
+    for(String currentNumber:numbers){
+        if (stringToInt(currentNumber) > 1000){
+            continue;
+        }
+    sum += stringToInt(currentNumber);
 }
+    return sum;
+}
+
+private int stringToInt(String number){
+    int num = Integer.parseInt(number);
+    if(num < 0){
+        
+
+
+
+

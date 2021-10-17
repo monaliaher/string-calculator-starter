@@ -29,8 +29,11 @@ private int getSum(String[] numbers){
 private int stringToInt(String number){
     int num = Integer.parseInt(number);
     if(num < 0){
-        
-
-
+     throw new IllegalArgumentException("negatives not allowed");   
+    } else {
+        return num;
+    }
+}
+}
 
 
